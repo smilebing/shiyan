@@ -15,7 +15,7 @@ public class SingleLogonGUI extends JFrame {
   
    
    //****************************
-   public static SingleLogonGUI singleLogonGUI;
+   private static SingleLogonGUI singleLogonGUI;
 
    //***************************
    private SingleLogonGUI() {
@@ -109,6 +109,7 @@ public class SingleLogonGUI extends JFrame {
 	   }
 	   return singleLogonGUI;
    }
+   //****************************************
    
    class ButtonHandler implements ActionListener  {
       public void actionPerformed(ActionEvent e) {
