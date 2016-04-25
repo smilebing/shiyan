@@ -19,9 +19,14 @@ public class Customer {
 
 	         return adapter.isValidZipCode(zip, state);
 	      }
-	      //if (country.equals(Customer.CHINA)){
-	      //}
-	      else
+	      //============================================
+	      if (country.equals(Customer.CHINA))
+	      {
+	    	  ChinesePostalCode  chinesePostalCode=new ChinesePostalCode();
+	    	  ZipCodeValidator adapter=new ChinesePostalCodeAdapter(chinesePostalCode);
+	    	  return adapter.isValidZipCode(zip, state);
+	      }
+	      
 		 return false;
 	   }
 

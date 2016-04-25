@@ -15,8 +15,7 @@ public abstract class BuildingFactory {
 		}
 		return bFactory;
 	}
-	
-	
+
 	public abstract BaoXian getBaoxian();
 	public abstract JiJin getJijin();
 	
