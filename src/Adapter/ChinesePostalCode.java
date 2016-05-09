@@ -4,7 +4,7 @@ public class ChinesePostalCode {
 
 	public boolean isValidChinesePcode(String postalCode, String province)
 	{
-		return true;
+		return  postalCode.length()==6 ;
 	}
 
 }

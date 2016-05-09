@@ -20,7 +20,7 @@ public class ZipCodeTester extends JFrame {
 		txtZip = new JTextField(22);
 
 		cmbCountry = new JComboBox();
-		cmbCountry.addItem(Customer.US);
+		cmbCountry.addItem(Customer.US);	
 		cmbCountry.addItem(Customer.CANADA);
 		cmbCountry.addItem(Customer.CHINA);
 		cmbCountry.addActionListener(new ChoiceListener());
